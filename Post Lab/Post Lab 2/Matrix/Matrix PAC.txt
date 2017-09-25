@@ -1,0 +1,21 @@
+Input for the problem:-
+
+Size of the square matrix - n
+Next n2 lines - elements of square matrix
+---------------------------------------
+Processing involved:-
+
+~~ Read size of square matrix and store in n.
+~~ Initialize a 2D array and tor matrix elements.
+~~ iterate through i,j then k from i=j=k=0 to i=j=n and k=n-j-1 and use bubble sort to sort the elements in each column.
+~~ iterate through i,j then k from i=j=k=0 to i=j=n and k=n-i-1 and use bubble sort to sort the elements in each row.
+~~ Iterate through i and j and print sorted matrix. 
+------------------------------------------
+Output for the problem:-
+
+Sorted square matrix in matrix format.
+-------------------------------------------
+Solution alternatives:-
+
+1)Use functions.
+2)Use different form of sorting.

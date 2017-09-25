@@ -1,0 +1,53 @@
+ALGORITHM:-
+STEP1 - Initialize n as int.
+STEP2 - Read n.
+STEP3 - Initialize a 2D array of "n x n" length, i,j and k as int.
+STEP4 - Read and save the elements of matrix in 2D array.
+	       for(i=0;i<n;i++)
+                   {
+		    for(j=0;j<n;j++)
+                        {
+			scanf("%d",&array[i][j]);
+                        }
+                   }
+STEP5 - Iterate through i,j then k from i=j=k=0 to i=j=n and k=n-j-1 and use bubble sort to sort the elements in each column.
+	for(i=0;i<n;i++)
+             {
+	     for(j=0;j<n;j++)
+                 {
+	         for(k=0;k<n-j-1;k++)
+                      {
+		      if(array[i][k]>array[i][k+1] )
+                         {
+			  temp=array[i][k];
+			  array[i][k]=array[i][k+1];
+		          array[i][k+1]=temp;
+                        }			
+                    }
+               }		
+          }
+STEP6 - iterate through i,j then k from i=j=k=0 to i=j=n and k=n-i-1 and use bubble sort to sort the elements in each row.
+	for(j=0;j<n;j++)
+            {
+	    for(i=0;i<n;i++)
+                 {
+	         for(k=0;k<n-i-1;k++)
+                      {
+	              if(array[k][j]>array[k+1][j] )
+                         {
+			 temp=array[k][j];
+			 array[k][j]=array[k+1][j];
+			 array[k+1][j]=temp;
+                        }			
+                    }
+               }
+          }
+STEP8-  Iterate through i and j and print sorted matrix. 
+               for(i=0;i<n;i++)
+                    {
+		    for(j=0;j<n;j++)
+                        {
+			 printf("%d ",array[i][j]);
+                        }
+		   printf("\n");
+                   }
