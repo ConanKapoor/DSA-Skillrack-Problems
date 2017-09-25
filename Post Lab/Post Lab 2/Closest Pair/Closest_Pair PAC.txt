@@ -1,0 +1,23 @@
+Input for the problem:-
+
+Number of points - n
+Next n lines - points.
+---------------------------------------
+Processing involved:-
+
+~~Read the value of n.
+~~Initialize an array as int of length n.
+~~Read the number of points and save in the array.
+~~compute reference distance between points and square it so it can be positive.
+~~iterate 2 points in 2 loops from i=j=0 to i=j=n in nested loop and check if the value of ((array[i]-array[j])*(array[i]-array[j]))<z and i!=j.
+~~If so copy the value of i and j to dummy variable x and y and reinitiate the value of z as z=(array[x]-array[y])*(array[x]-array[y]);.
+~~Print the closest Pair.
+------------------------------------------
+Output for the problem:-
+
+Closest pair of points: “(xi, xj)”.
+-------------------------------------------
+Solution alternatives:-
+
+1)By using functions.
+2)By using absolute function of math library instead of squaring the distance.
