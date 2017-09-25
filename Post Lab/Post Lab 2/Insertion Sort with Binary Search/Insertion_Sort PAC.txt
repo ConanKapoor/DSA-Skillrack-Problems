@@ -1,0 +1,21 @@
+Input for the problem:-
+
+Number of integers - N
+Next ‘N’ lines - integers
+---------------------------------------
+Processing involved:-
+
+- Form a function to perform binary search from the inputted array and find the location to perform insertion sort.
+- Form a function to perform insertion sort from the location taken by calling binary search function inside insertion sort function.
+- In main function, read the value of n.
+- Read the n number of inputs and store in an array.
+- Call the insertion sort function with the array and n as arguments.
+- Print the array.
+------------------------------------------
+Output for the problem:-
+
+N lines of integers in descending order.
+-------------------------------------------
+Solution alternatives:-
+
+- By using binary search and insertion sort inside the main function only.

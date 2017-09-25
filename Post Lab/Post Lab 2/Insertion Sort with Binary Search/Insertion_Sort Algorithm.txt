@@ -1,0 +1,19 @@
+ALGORITHM:-
+STEP1 - Form a function to perform binary search from the inputted array and find the location to perform insertion sort. (Basically binary search algorithm).
+                 int binarySearch(int array[],int input,int low,int high)
+STEP2 - Form a function to perform insertion sort from the location taken by calling binary search function inside insertion sort function.(Basically insertion sort algorithm).
+                 void insertionSort(int array[],int n)
+STEP3 - In main function, initialize i and n as int.
+STEP4 - Read the value of n.
+STEP5 - Read the n number of inputs and store in an array.
+               for(i=0;i<n;i++)
+                   {
+                   scanf("%d",&array[n]);	
+		   }
+STEP6 - Call the insertion sort function with an array and n as arguments.
+                          insertionSort(array,n);
+STEP7 - Print the sorted array.
+               for(i=0;i<n;i++)
+                    {
+                    printf("%d",array[i]);		
+                    }
