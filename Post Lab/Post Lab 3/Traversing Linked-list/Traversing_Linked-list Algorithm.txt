@@ -1,0 +1,72 @@
+ALGORITHM:-
+STEP1 - Form a structure for a node.
+	
+        typedef struct node
+        {
+            int data;
+            struct node *next;
+        }a;
+STEP2 - Initialize Data_Enter, Node_removal and display function.
+STEP3 - In main function, Initialize n,i,value,M,N as int.
+STEP4 - Read n.
+STEP5 - Initialize a *head and head=NULL.
+STEP6 - Iterate through i=1 to i<=n and scan value and call Data_Enter function to enter 
+
+the same.
+STEP7 - Read M and N.
+STEP8 - Check boundary conditions.
+        if(M<=0 || N<=0)
+        {
+            printf("Invalid input");
+            exit(0);
+        }
+STEP9 - Call Node_removal function with attributes (&head,M,N).
+STEP10 - Call display function with attribute &head to print data.
+STEP11 - Form Node_removal function to remove N nodes.In the function, initialize-
+        int i,counter1;
+        a *temporary1, *Delete, *temporary2;
+        temporary1=*add_head;
+STEP12 - while 1==1, do -
+		counter1=1;
+		while((temporary1->next)!=NULL && counter1!=A)
+		{
+			temporary1=temporary1->next;
+			counter1++;
+		}
+		if((temporary1->next)==NULL)
+			break;
+		for(i=1;i<=B;i++)
+		{
+			Delete=temporary1->next;
+			temporary2=Delete->next;
+			free(Delete);
+			temporary1->next=temporary2;
+			if((temporary1->next)==NULL)
+				break;
+		}
+		if((temporary1->next)==NULL)
+			break;
+		temporary1=temporary1->next;
+STEP13 - Form Data_Enter function to input data.In the function, initialize-
+	a *new_node=(a*)malloc(sizeof(a));
+	new_node->data=value;
+ 	new_node->next=NULL;
+STEP14 - Then do -
+	if(*add_head==NULL)
+    		*add_head=new_node;
+    	else
+    	{
+    		a *temporary;
+    		temporary=*add_head;
+    		while((temporary->next)!=NULL)
+ 		{
+ 			temporary=temporary->next;
+ 		}
+ 		temporary->next=new_node;
+    	}
+STEP15 - Form display function to print data.In the function, initialize - 
+		a *temporary;
+		temporary=*add_head;
+STEP16 - While temporary!=NULL, do -
+		printf("%d\n",temporary->data);
+		temporary=temporary->next;

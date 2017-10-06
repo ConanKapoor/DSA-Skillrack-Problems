@@ -1,0 +1,29 @@
+Input for the problem:-
+
+1) Degree of polynomial P1 - m
+2) Degree of polynomial P2 - n
+3) Next 2(m+1) lines will contain the coefficients and exponents of P1
+4) Next 2(n+1) lines will contain the coefficients and exponents of P2
+---------------------------------------
+Processing involved:-
+
+- Form a structure for a node.
+- Initialize get_Data, polynomial and display function.
+- In main function, Read a and b.
+- Initialize -p *head1, *head2, *head3; and do head1=NULL,head2=NULL and head3=NULL
+- Iterate through i=a to i=0 and Read value and call get_Data function and save in head 1.
+- Iterate through i=b to i=0 and Read value and call get_Data function and save in head 2.
+- Call polynomial function with attribute &head1, &head2, &head3,a and b.
+- Call display function on &head3.
+- Form get_Data function to read data.
+- Form Polynomial function to compute polynomial addition. 
+- Form a display function to print the data.
+------------------------------------------
+Output for the problem:-
+
+Each line displays the term of resultant polynomial P3 as coefficient, exponent.
+-------------------------------------------
+Solution alternatives:-
+
+1)Data can be read in the main function only instead of making get_data function.
+2)Similarly, display function can be implemented in main function only.
