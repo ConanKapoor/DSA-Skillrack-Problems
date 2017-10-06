@@ -1,0 +1,33 @@
+Input for the problem:-
+
+1)Name of a player.
+2)Runs of the player.
+3)(yes or no) to obtain the details of next player.
+
+If option=”yes”
+4)Player to be searched.
+5)Minimum run value.
+---------------------------------------
+Processing involved:-
+
+~~Form a function getnode and save name and runs in it.
+~~Form insert function to insert value into nodes in ascending and descending order.
+~~Form part_a function to insert data at front or end to form descending list.
+~~Form part_b function to print the name and runs of players in order of ascending and descending runs.
+~~Form part_c function to find other players with same runs and print their names.
+~~Form deletion function to delete nodes(data) with specified conditions.
+~~In main function, read inputs.
+------------------------------------------
+Output for the problem:-
+
+1)Names and runs of the players in ascending order of runs with name in the first line and runs in the next line.
+
+2)The next line will display the names and runs of the players in descending order of runs with name in one line and runs in the next line.
+
+3)The next subsequent lines will display the players who has scored same runs as that the given player
+
+4)The next line will display the details after removing the records of players whose run score is less than the minimum run value with name of the player in the first line and runs in the next line
+-------------------------------------------
+Solution alternatives:-
+
+By doing everything in main function.

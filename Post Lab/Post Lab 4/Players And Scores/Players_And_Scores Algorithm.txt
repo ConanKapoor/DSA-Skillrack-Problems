@@ -1,0 +1,18 @@
+ALGORITHM:-
+STEP1 - Include stdlib and string library.
+STEP2 - Form a structure with name as a character array of length 10, runs as int and prev and next as pointers.
+STEP3 - Form a function getnode and save name and runs in it.
+STEP4 - Form insert function to insert value into nodes in ascending and descending order.
+STEP5 - Form part_a function to insert data at front or end to form descending list.
+STEP6 - Form part_b function to print the name and runs of players in order of ascending and descending runs.
+STEP8 - Form part_c function to find other players with same runs and print their names.
+STEP9 - Form deletion function to delete nodes(data) with specified conditions.
+STEP10 - In main function, initiate choice as a character array of length 10.
+STEP11 - Read the choice until the choice is 'y'.
+STEP12 - Initiate word as a character array of length 10.
+STEP13 - Read the name of player and save in character array word.
+STEP14 - Initiate limit as int.
+STEP15 - Read the value of limit.
+STEP16 - Call part_a with no arguments.
+STEP17 - Call part_b with word as argument.
+STEP18 - Call part_c with limit as argument.
