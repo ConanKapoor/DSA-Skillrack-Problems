@@ -1,0 +1,13 @@
+ALGORITHM:-
+STEP1 - Include stdlib library.
+STEP2 - Form a structure with data as int and 2 pointers next and prev.
+STEP3 - Initiate a global variable n as int.
+STEP4 - Form InsertEnd function to insert the values in a linked list.
+STEP5 - Form swap function to swap adjacent nodes.
+STEP6 - Form display function to display the changed linked list.
+STEP7 - In main function, initiate i and val as int.
+STEP8 - Assign head and tail as NULL.
+STEP9 - Read the number of nodes and save in n.
+STEP10 - Read the values and use InsertEnd function to add in linked list.
+STEP11 - Call swap function by giving head as variable to swap nodes.
+STEP12 - Call display function to display the swapped nodes.

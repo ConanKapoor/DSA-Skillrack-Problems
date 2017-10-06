@@ -1,0 +1,21 @@
+Input for the problem:-
+
+1)Number of nodes in the list -  N
+2)Next N lines - integer
+---------------------------------------
+Processing involved:-
+
+~~Form InsertEnd function to insert values into linked list.
+~~Form Swap function to swap 2 adjacent nodes.
+~~Form display function to display the changed linked list.
+~~Read the number of nodes and save in n.
+~~Read the values and use InsertEnd function to add in linked list.
+~~call swap and display function.
+------------------------------------------
+Output for the problem:-
+
+The first N lines with the integer values after swapping.
+-------------------------------------------
+Solution alternatives:-
+
+Do without using functions,i.e. everything in main function.
