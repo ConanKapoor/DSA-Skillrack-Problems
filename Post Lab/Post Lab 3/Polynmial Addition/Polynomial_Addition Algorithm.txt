@@ -1,0 +1,77 @@
+ALGORITHM:-
+STEP1 - Form a structure for a node.
+	
+	typedef struct node
+	{
+		int coefficient,exponent;
+		struct node *next;
+	}p;
+STEP2 - Initialize get_Data, polynomial and display function.
+STEP3 - In main function, Initialize a,b,i and value as int.
+STEP4 - Read a and b.
+STEP5 - Initialize -p *head1, *head2, *head3; and do head1=NULL,head2=NULL and head3=NULL
+STEP6 - Iterate through i=a to i=0 and Read value and call get_Data function and save in head 1.
+STEP7 - Iterate through i=b to i=0 and Read value and call get_Data function and save in head 2.
+STEP8 - Call polynomial function with attribute &head1, &head2, &head3,a and b.
+STEP9 - Call display function on &head3.
+STEP10 - Form get_Data function to read data. In function, Initialize - 
+		p *new_node=(p*)malloc(sizeof(p));
+		new_node->coefficient=value;
+		new_node->exponent=i;
+	 	new_node->next=NULL;
+STEP11 - If *add_head==NULL, do *add_head=new_node.
+STEP12 - Otherwise - 
+    		p *temporary;
+    		temporary=*add_head;
+    		while((temporary->next)!=NULL)
+ 		{
+ 			temporary=temporary->next;
+ 		}
+ 		temporary->next=new_node;
+STEP12 - Form Polynomial function to compute polynomial addition. Initialize - 
+		p *temporary1,*temporary2,*temp3;int d,i,k=0;
+		temporary1=*head_add1;
+		temporary2=*head_add2;
+		d=abs(a-b);
+		p *array[d];
+STEP13 - If (a>b), do - 
+		for(i=1;i<=d;i++)
+		{
+			array[k++]=temporary1;
+			temporary1=temporary1->next;
+		}
+STEP14 - If (a<b), do - 
+		for(i=1;i<=d;i++)
+		{
+			array[k++]=temporary2;
+			temporary2=temporary2->next;
+		}
+STEP15 - Make a do-while loop.In do loop, Initialize -
+		p *new_node=(p*)malloc(sizeof(p));
+		new_node->exponent=temporary1->exponent;
+		new_node->coefficient=temporary1->coefficient + temporary2->coefficient;
+		new_node->next=NULL;
+STEP16 - In the do loop, if *head_add3==NULL, *head_add3=new_node;
+STEP17 - Otherwise, do -
+    		temp3=*head_add3;
+    		while((temp3->next)!=NULL)
+ 			{
+ 				temp3=temp3->next;
+ 			}
+ 			temp3->next=new_node;
+STEP18 - Do - temporary1=temporary1->next; and temporary2=temporary2->next;
+STEP19 - While temporary1!=NULL, iterate through i=d-1 to i=0 and do -
+		p *new_node=(p*)malloc(sizeof(p));
+     		new_node->coefficient=array[i]->coefficient;
+     		new_node->exponent=array[i]->exponent;
+    		new_node->next=*head_add3;
+    		*head_add3=new_node;
+STEP20 - Form a display function to print the data.
+       		p *temporary;
+        	temporary=*head_add3;
+	        while(temporary!=NULL)
+        	{
+            		if(temporary->coefficient!=0)
+                		printf("%d,%d\n",temporary->coefficient,temporary->exponent);
+            		temporary=temporary->next;
+        	}

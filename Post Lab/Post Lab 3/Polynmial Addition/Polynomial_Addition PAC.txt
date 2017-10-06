@@ -1,0 +1,42 @@
+Input for the problem:-
+
+1)Number of jobs waiting in the queue -  n
+2)The subsequent lines contains the following information
+    Id of 1st job
+    Name of the 1st job
+    Service time of the 1st job
+    ....    
+    Id of nth job
+    Name of the nth job
+    Service time of the nth job
+3)Time ‘t’
+---------------------------------------
+Processing involved:-
+
+- Form a structure Jobs with job_id and time as int and jobname of length 20 as char.
+- Form a structure queue with a of length of 10 as struct Jobs and front and rear as int.
+- Form IsFull and IsEmpty function to check for the same.
+- Form Enqueue and Dequeue functions to enqueue and dequeue values in a queue.
+- Form display function to print the results.
+- In main function, Read n.
+- Iterate i from 0 to n and Initialize struct Jobs *K and Initialize K=malloc(sizeof (struct Jobs))
+- Inside loop Read job_id,job_name and time and enqueue the values.
+- Read Time.
+- While Time>0, do Time-=x.a[x.front].time; and Dequeue(&x).
+- Call display function.
+------------------------------------------
+Output for the problem:-
+
+If the queue is not empty, the print the details of the jobs in the queue at time t as shown below:
+
+1)Id of current 1st job
+2)Name of the current 1st job
+3)Id of last job
+4)Name of the last job
+
+If the queue is empty
+    Print “No job is waiting”
+-------------------------------------------
+Solution alternatives:-
+
+Do everything in main function instead of making isFull and isEmpty functions.
