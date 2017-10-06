@@ -1,0 +1,27 @@
+Input for the problem:-
+
+1)No. of. Samples to be drawn - N
+2)The next line will contain the samples drawn
+---------------------------------------
+Processing involved:-
+
+- Form a structure for node and initialize val and flag as int and struct node *link.
+- Form a get_node function.
+- Form a read_node function to read data and storing in linked list.
+- Form insert_end function to insert data at the end of linked list.
+- Form sorting function to sort data in linked list using bubble sort.
+- In main function, read num.
+- Call get_node function.
+- Read the value - scanf("%d",&(new_node->val))
+- Iterate through i=0 to num-1 and call insert_end function.
+- Call sorting function on head.
+- Loop till head!=NULL and print value and count.
+------------------------------------------
+Output for the problem:-
+
+The first 2N lines will print the ordered data value followed by its count.
+-------------------------------------------
+Solution alternatives:-
+
+1)Do sorting using other form of sorts..i.e. insertion sort,selection sort etc.
+2)We can read node in main function itself instead of making a separate function.

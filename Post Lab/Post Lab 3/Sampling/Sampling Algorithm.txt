@@ -1,0 +1,95 @@
+ALGORITHM:-
+STEP1 - Form a structure for node and initialize val and flag as int and struct node *link.
+	struct node
+	{
+    		int val,flag;
+    		struct node *link;
+	}*head,*last,*new_node;
+STEP2 - Form a get_node function.
+	void get_node()
+	{
+    		new_node=(struct node*)malloc(sizeof(struct node));
+		new_node->link = NULL;
+    		new_node->flag = 0;
+	}
+STEP3 - Form a read_node function to read data and storing in linked list.
+        int read_node(struct node*List)
+        {
+            int magnitude,counter;
+            scanf("%d",&magnitude);
+            counter=0;
+            for(;List!=NULL;List=List->link)
+            {
+                if (List->val==magnitude)
+                {
+                    List->flag=List->flag+1;
+                    counter++;
+                }
+            }
+            if (counter>0)
+            {
+                return 1;
+            }
+            else
+            {
+
+                new_node->val=magnitude;
+                new_node->flag++;
+                new_node->link=NULL;
+                return 0;
+            }
+        }
+STEP4 - Form insert_end function to insert data at the end of linked list.
+        void insert_end()
+        {
+            get_node();
+            if (new_node==NULL)
+            {
+                return;
+            }
+
+            int check = read_node(head);
+
+            if(check==0)
+            {
+                last->link=new_node;
+                last=new_node;
+            }
+            else
+                return;
+        }
+STEP5 - Form sorting function to sort data in linked list using bubble sort.
+        void sorting(struct node* List)
+        {
+            int temporary,temporary1;
+            struct node *pointer,*pointer1;
+            pointer = List;
+            while(pointer->link!=NULL)
+            {
+                pointer1=pointer->link;
+                while(pointer1!=NULL){
+                    if (pointer->val > pointer1->val)
+                    {
+                        temporary = pointer->val;
+                        pointer->val=pointer1->val;
+                        pointer1->val=temporary;
+
+                        temporary1=pointer->flag;
+                        pointer->flag=pointer1->flag;
+                        pointer1->flag=temporary1;
+                    }
+                    pointer1=pointer1->link;
+                }
+                pointer=pointer->link;
+            }
+        }
+STEP6 - In main function, initialize num and i as int.
+STEP7 - Read num.
+STEP8 - Call get_node function.
+STEP9 - Read the value - scanf("%d",&(new_node->val))
+STEP10 - Do new_node->flag++;
+STEP11 - Do head = last = new_node
+STEP12 - Iterate through i=0 to num-1 and call insert_end function.
+STEP13 - Call sorting function on head.
+STEP14 - Loop till head!=NULL and print value and count.
+
