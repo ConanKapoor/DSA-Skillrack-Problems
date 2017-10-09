@@ -1,0 +1,10 @@
+ALGORITHM:-
+STEP1 - Initiate g function - void g(float x[],int n,int t).
+STEP2 - In main function, Initialize n,i and t.
+STEP3 - Read the value of n.
+STEP4 - If n>=2 then proceed otherwise print Invalid input.
+STEP5 - Initialize an array of length n as float.
+STEP6 - Read the elements of the array.
+STEP7 - In g function, if n==-1, close the program.
+STEP8 - if n==t, call g function again with g(x,n-1,t).
+STEP9 - Otherwise, in temp variable do the multiplication x[t]*x[n] and print it and call the function g(x,n-1,t) again.

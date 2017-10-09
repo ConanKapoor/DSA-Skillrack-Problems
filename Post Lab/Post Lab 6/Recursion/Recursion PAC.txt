@@ -1,0 +1,23 @@
+Input for the problem:-
+
+1)Size of the array x - n
+2)The next n lines - elements.
+3)Position in array - t
+---------------------------------------
+Processing involved:-
+
+- Read value of n.
+- If n>=2 then proceed otherwise print Invalid input.
+- Read the elements of the array and the value of t.
+- Call the g function - g(a,n-1,t)
+- In g function, if n==-1, close the program.
+- if n==t, call g function again with g(x,n-1,t).
+- Otherwise, in temp variable do the multiplication x[t]*x[n] and print it and call the function g(x,n-1,t) again.
+------------------------------------------
+Output for the problem:-
+
+Each line displays the result of  xt*xi.
+-------------------------------------------
+Solution alternatives:-
+
+Check conditions of n in main function then call the function rather than checking the condition in g function.
