@@ -1,0 +1,37 @@
+Input for the problem:-
+
+1)First Line - x coordinate of the point Q.
+2)Second Line - y coordinate of the point Q.
+---------------------------------------
+Processing involved:-
+
+~~ Form a structure "point" with x and y as int.
+~~ In main function, initialize i and ratio as int.
+~~ make point1,point2 and middle as point data type.
+~~ Do point.x=0 and point.y=0.
+~~ Read x coordinate and save in point2.x and y coordinate in point2.y.
+~~ Find middle for both x and y coordinate.
+~~ If point2.y<point2.x then - 
+        ratio=point2.x/point2.y;
+        for(i=0;i<middle.y;i++)
+        {
+            point1.x=point1.x+ratio;
+            point1.y=point1.y+1;
+            printf("%d\n%d\n",point1.x,point1.y);
+        }
+~~  Otherwise, 
+        ratio=point2.y/point2.x;
+        for(i=0;i<middle.x;i++)
+        {
+            point1.x=point1.x+1;
+            point1.y=point1.y+ratio;
+            printf("%d\n%d\n",point1.x,point1.y);
+        }
+------------------------------------------
+Output for the problem:-
+
+Display all points i.e p1,p2, p3,….pn with x coordinate in the first line and the corresponding y coordinate in the next line.
+-------------------------------------------
+Solution alternatives:-
+
+As it is brute force method, we have to test every condition and that's why there can be no alternative for this question.
