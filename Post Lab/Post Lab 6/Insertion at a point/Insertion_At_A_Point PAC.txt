@@ -1,0 +1,26 @@
+Input for the problem:-
+
+1)Size of the array - n
+2)Next n lines - Elements of the array
+3)Position in array - p
+4)Value to be inserted - b
+---------------------------------------
+Processing involved:-
+
+- Initialize insert function.
+- In main function, Read n.
+- Read elements of array.
+- Read p and b.
+- Check boundary conditions and proceed otherwise print Invalid input.
+- Call insert command with attributes - insert(x,p,n,b).
+- Print the modified array.
+- In insert function form a temp variable and shift each element after pth position to 1 next.
+- In pth position add value b.
+------------------------------------------
+Output for the problem:-
+
+n+1 lines contains the elements of array a.
+-------------------------------------------
+Solution alternatives:-
+
+By not going from back but directly changing the positions of elements.

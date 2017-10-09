@@ -1,0 +1,17 @@
+ALGORITHM:-
+STEP1 - Initialize insert function.
+STEP2 - In main function, Initialize n,p,b and i as int.
+STEP3 - Read n.
+STEP4 - Initialize x array of length 20 as int.
+STEP5 - Read elements of the array.
+STEP6 - Read p and b.
+STEP7 - Check boundary conditions and proceed otherwise print Invalid input.
+STEP8 - Call insert command with attributes - insert(x,p,n,b).
+STEP9 -  Print the modified array.
+STEP10 - In insert function form a temp variable and shift each element after pth position to 1 next.
+    for(i=n;i>=p;i--)
+    {
+        temp=a[i-1];
+        a[i]=temp;
+    }
+STEP11 - In pth position add value b.  -  temp=a[i-1];
