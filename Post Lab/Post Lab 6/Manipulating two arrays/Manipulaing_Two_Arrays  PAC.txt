@@ -1,0 +1,23 @@
+Input for the problem:-
+
+1)Size of the arrays - n.
+2)Next n lines - elements of x.
+3)Next n lines - elements of y.
+---------------------------------------
+Processing involved:-
+
+- Initialize 3 functions, part_a,part_b and part_c.
+- Read n.
+- If n>0, then proceed otherwise print Invalid input.
+- Read the elements of x and y and write 3 print function and call all 3 functions in respective print command.
+- In part_a Calculate the sum of y and multiply with x terms and add in result and return it.
+- In part_b Calculate the sum of y terms and multiply with sum of x terms and add in result and return it.
+- In part_c proceed same as part_b just change the condition of loops.
+------------------------------------------
+Output for the problem:-
+
+Answers of given expressions, one in each line.
+-------------------------------------------
+Solution alternatives:-
+
+Instead of forming functions for each part of the question form a function for sum of y terms and another for sum of x terms and call it.

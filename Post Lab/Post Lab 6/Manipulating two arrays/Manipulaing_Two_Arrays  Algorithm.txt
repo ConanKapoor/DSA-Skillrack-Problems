@@ -1,0 +1,107 @@
+ALGORITHM:-
+STEP1 - Initialize 3 functions, part_a,part_b and part_c.
+STEP2 - Initialize i and n as int.
+STEP3 - Read n.
+STEP4 - Initialize x and y array of length n as int.
+STEP5 - If n>0, then proceed otherwise print Invalid input.
+STEP6 - Read the elements of x and y and write 3 print function and call all 3 functions in respective print command.
+STEP7 - In part_a Calculate the sum of y and multiply with x terms and add in result and return it.
+int part_a(int x[],int y[],int n)
+{
+    int i,j,Sum=0,Result=1;
+    for(i=0;i<n;i++)
+    {
+        for(j=i;j<n;j++)
+        {
+            Sum+=y[j];
+        }
+    Result+=x[i]*Sum;
+    Sum=0;
+    }
+    return Result;
+}
+STEP8 - In part_b Calculate the sum of y terms and multiply with sum of x terms and add in result and return it.
+int part_b(int x[],int y[],int n)
+{
+    int i,j,Sum1=0,Sum2=0,Result=0;
+    for(i=0;i<n;i++)
+    {
+        Sum1+=x[i];
+        for(j=i;j<n;j++)
+        {
+            Sum2+=y[j];
+        }
+        Result+=Sum1*Sum2;
+        Sum2=0;
+    }
+    return Result;
+}
+STEP9 - In part_c proceed same as part_b just change the condition of loops.
+int part_c(int x[],int y[],int n)
+{
+    int i,j,Sum1=0,Sum2=0,Result=0;
+    for(i=0;i<n-1;i++)
+    {
+        Sum1+=x[i];
+        for(j=i+1;j<n;j++)
+        {
+            Sum2+=y[j];
+        }
+        Result+=Sum1*Sum2;
+        Sum2=0;
+    }
+    return Result;
+}ALGORITHM:-
+STEP1 - Initialize 3 functions, part_a,part_b and part_c.
+STEP2 - Initialize i and n as int.
+STEP3 - Read n.
+STEP4 - Initialize x and y array of length n as int.
+STEP5 - If n>0, then proceed otherwise print Invalid input.
+STEP6 - Read the elements of x and y and write 3 print function and call all 3 functions in respective print command.
+STEP7 - In part_a Calculate the sum of y and multiply with x terms and add in result and return it.
+int part_a(int x[],int y[],int n)
+{
+    int i,j,Sum=0,Result=1;
+    for(i=0;i<n;i++)
+    {
+        for(j=i;j<n;j++)
+        {
+            Sum+=y[j];
+        }
+    Result+=x[i]*Sum;
+    Sum=0;
+    }
+    return Result;
+}
+STEP8 - In part_b Calculate the sum of y terms and multiply with sum of x terms and add in result and return it.
+int part_b(int x[],int y[],int n)
+{
+    int i,j,Sum1=0,Sum2=0,Result=0;
+    for(i=0;i<n;i++)
+    {
+        Sum1+=x[i];
+        for(j=i;j<n;j++)
+        {
+            Sum2+=y[j];
+        }
+        Result+=Sum1*Sum2;
+        Sum2=0;
+    }
+    return Result;
+}
+STEP9 - In part_c proceed same as part_b just change the condition of loops.
+int part_c(int x[],int y[],int n)
+{
+    int i,j,Sum1=0,Sum2=0,Result=0;
+    for(i=0;i<n-1;i++)
+    {
+        Sum1+=x[i];
+        for(j=i+1;j<n;j++)
+        {
+            Sum2+=y[j];
+        }
+        Result+=Sum1*Sum2;
+        Sum2=0;
+    }
+    return Result;
+}
