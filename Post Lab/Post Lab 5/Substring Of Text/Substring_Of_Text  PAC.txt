@@ -1,0 +1,22 @@
+Input for the problem:-
+
+1)First line - String.
+2)Second line - Pattern.
+---------------------------------------
+Processing involved:-
+
+~~ Initialize length1,length2,i,j and c=0 as int.
+~~ Initialize string and pattern as char array.
+~~ Use strlen function to find length of Pattern and String and store in length1 and length2 respectively.
+~~ If length1>length2 || length2<0 || length1<0 , end the program.
+~~ Otherwise iterate through i=0 to length2-1 and j=0 to length1-1 and if String[i+j]==Pattern[j] , do c++.
+~~ Otherwise Put c=0 and break the loop.
+~~ Check if c==length1, print i+1 otherwise print "-1".
+------------------------------------------
+Output for the problem:-
+
+Display the position of the first character in the text that starts the first matching substring.
+-------------------------------------------
+Solution alternatives:-
+
+As it is brute force method, we have to test every condition and hence there can be no alternative solution.

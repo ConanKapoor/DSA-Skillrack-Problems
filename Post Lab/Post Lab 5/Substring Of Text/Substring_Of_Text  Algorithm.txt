@@ -1,0 +1,8 @@
+ALGORITHM:-
+STEP1 - Initialize length1,length2,i,j and c=0 as int.
+STEP2 - Initialize string and pattern as char array.
+STEP3 - Use strlen function to find length of Pattern and String and store in length1 and length2 respectively.
+STEP4 - If length1>length2 || length2<0 || length1<0 , end the program.
+STEP5 - Otherwise iterate through i=0 to length2-1 and j=0 to length1-1 and if String[i+j]==Pattern[j] , do c++.
+STEP6 - Otherwise Put c=0 and break the loop.
+STEP7 - Check if c==length1, print i+1 otherwise print "-1".
