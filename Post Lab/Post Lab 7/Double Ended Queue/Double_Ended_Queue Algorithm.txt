@@ -1,0 +1,82 @@
+ALGORITHM:-
+STEP1 - Initialize global variables - array of length 10, i=0, b=0 and d=0 as int.
+STEP2 - Form a structure for a queue node - 
+            struct queue
+            {
+                int data;
+                struct queue* next;
+            };
+
+STEP3 - Form is_Empty function to check if queue is empty - 
+            if(front == NULL)
+            {
+                printf("Queue is empty");
+            }
+            else
+            {
+                return;
+            }
+STEP4 - Form front_Insert function to insert data in queue from front in which initialize-
+            struct queue *ptr;
+            ptr=malloc(sizeof(struct queue));
+            scanf("%d",&ptr->data);
+            ptr->next=NULL;
+STEP5 - If front==NULL, do front=ptr and rear=ptr.
+STEP6 - Otherwise ptr->next=front and front=ptr.
+STEP7 - Form rear_Insert function to insert data in queue from rear in which initialize-
+            struct queue* ptr;
+            ptr=malloc(sizeof(struct queue));
+            ptr->next=NULL;
+            scanf("%d",&ptr->data);
+STEP8 - If rear==NULL, do front=ptr and rear=ptr.
+STEP9 - Otherwise ptr->next=front and rear=ptr.
+STEP10 - Form front_Delete function to delete data from data from front of the queue in which first of all do b++ then if front==NULL, print "Queue is empty" and close the program.
+STEP11 - IF front=rear, do -
+                array[i]=front->data;
+                i++;
+                free(front);
+                rear=NULL;
+STEP12 - Otherwise - 
+            struct queue *ptr;
+            ptr=front;
+            array[i]=ptr->data;
+            i++;
+            front = ptr->next;
+            free(ptr);
+STEP13 - Form rear_Delete function to delete data from data from rear of the queue and initialize - 
+            d++;
+            struct queue *temporary,*ptr;
+            temporary=front;
+STEP14 - If rear==NULL, print Queue is empty and exit the program.
+STEP15 - If front==rear - 
+            array[i]=rear->data;
+            i++;
+            free(rear);
+            front=NULL;
+STEP16 - Otherwise-
+            while(temporary->next!=NULL)
+            {
+                ptr=temporary;
+                temporary=temporary->next;
+            }
+            array[i]=(ptr->next)->data;
+            i++;
+            ptr->next=NULL;
+            rear=ptr;
+            free(temporary);
+STEP17 - Form Display function to print the modified queue - 
+            int x;
+            for(x=0;x<i;x++)
+            {
+                printf("%d\n",array[x]);
+            }
+            struct queue *temporary;
+            temporary=front;
+            while(temporary!=NULL)
+            {
+                printf("%d\n",temporary->data);
+                temporary= temporary->next;
+            }
+STEP18 - In main function, Initialize character as char.
+STEP19 - Form a do while loop in which read character and form a switch statement for 5 choices till character!='e' || (b==0 && d==0).
+STEP20 - Call is_Empty function.

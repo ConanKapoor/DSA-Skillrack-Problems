@@ -1,0 +1,35 @@
+Input for the problem:-
+
+1)Choice of operation, ch.
+2)If ch= ‘a’ or ‘c’, then the next line contains the element to be inserted - x
+---------------------------------------
+Processing involved:-
+
+- Initialize global variables - array of length 10, i=0, b=0 and d=0 as int.
+- Form a structure for a queue node.
+- Form is_Empty function to check if queue is empty.
+- Form front_Insert function to insert data in queue from front.
+- Form rear_Insert function to insert data in queue from rear.
+- Form front_Delete function to delete data from data from front of the queue
+- Form rear_Delete function to delete data from data from rear of the queue
+- Form Display function to print the modified queue.
+- In main function, form a do while loop in which read character and form a switch statement for 5 choices till character!='e' || (b==0 && d==0).
+- Call is_Empty function.
+------------------------------------------
+Output for the problem:-
+
+1)If ch =  ‘b’ or ‘d’, then the line contains the front or rear element respectively that got deleted recently.
+2)If ch= ‘e’ and the queue is not empty then
+
+    A line contains the  1st element
+    Next line contains the 2nd element
+    …
+    Last line contains the last element
+
+Or if empty then
+    
+     Queue is empty
+-------------------------------------------
+Solution alternatives:-
+
+Form a instruction function in which write a menu of options and just call instructions function in do-while loop.
