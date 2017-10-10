@@ -1,0 +1,25 @@
+Input for the problem:-
+
+A string containing alphabets and * - strng.
+---------------------------------------
+Processing involved:-
+
+- Define MAXSIZE as 100.
+- Form a structure for stack.
+- Typedef the structure - typedef struct stack STACK; and do STACK s;
+- Initialize push and pop functions.
+- In main function, initialize s.top=-1.
+- Read string.
+- Iterate through i=0 to strlen(string)-1 and check the conditions for push and pop-
+- Iterate through i=0 to length-1 and print.
+- Form a push function with char alpha as attribute to carry out push operation.
+- Form a pop function to do pop operation.
+------------------------------------------
+Output for the problem:-
+
+A string containing only the alphabets in the input string.
+-------------------------------------------
+Solution alternatives:-
+
+1)Form a display function.
+2)Check conditions in a function.
