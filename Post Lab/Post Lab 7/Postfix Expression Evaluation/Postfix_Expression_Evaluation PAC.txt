@@ -1,0 +1,29 @@
+Input for the problem:-
+
+A string containing operands (single digit number) and operators - postfix.
+---------------------------------------
+Processing involved:-
+
+- Define MAXSIZE as 50 and initialize stack[MAXSIZE] and top=-1 as int.
+- Form push function for push operations.
+		void push(int element)
+		{
+  			stack[++top]=element;
+		}
+- Form pop function for pop operations.
+		int pop()
+		{
+    			return(stack[top--]);
+		}
+- In main function, Read postfix.
+- while (character=postfix[i++])!='\0', do evaluation according to conversion rules.
+- Print stack[top].
+------------------------------------------
+Output for the problem:-
+
+Result of the postfix expression.
+-------------------------------------------
+Solution alternatives:-
+
+1)Form a structure to implement stack.
+2)Form priority function separately. 

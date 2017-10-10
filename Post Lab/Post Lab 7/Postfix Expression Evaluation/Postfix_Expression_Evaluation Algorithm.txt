@@ -1,0 +1,35 @@
+ALGORITHM:-
+STEP1 - Define MAXSIZE as 50 and initialize stack[MAXSIZE] and top=-1 as int.
+STEP2 - Form push function for push operations.
+		void push(int element)
+		{
+  			stack[++top]=element;
+		}
+STEP3 - Form pop function for pop operations.
+		int pop()
+		{
+    			return(stack[top--]);
+		}
+STEP4 - In main function, Initialize postfix of length 50 and character as char and i=0,op1 and op2 as int.
+STEP5 - Read postfix.
+STEP6 - while (character=postfix[i++])!='\0', check - 
+            
+	    if(isdigit(character))
+                push(character-'0');
+            else
+            {
+                op2=pop();
+                op1=pop();
+                switch(character)
+                {
+                    case '+':push(op1+op2);
+                            break;
+                    case '-':push(op1-op2);
+                            break;
+                    case '*':push(op1*op2);
+                            break;
+                    case '/':push(op1/op2);
+                            break;
+                }
+            }
+STEP7 - Print stack[top].
