@@ -1,0 +1,23 @@
+Input for the problem:-
+
+A string containing alphabets and *.
+---------------------------------------
+Processing involved:-
+
+- Define MAX as 50.
+- Initialize queue[MAX] as char and rear=front=-1 as int. (Global variables).
+- Initialize Enqueue and Dequeue functions.
+- In main function, Read string.
+- Iterate through i=0 to strlen(string) and check if string[i]>='A' && string[i]<='Z' then Enqueue(string[i]) Otherwise do string_new[length]=Dequeue(); and length++;
+- Add '\0' at last of string. (string_new[length]='\0';)
+- Print string_new.
+- In Enqueue function, do enqueue operations.
+- In Dequeue function, do dequeue operations and return the value in front.
+------------------------------------------
+Output for the problem:-
+
+A string containing only the alphabets in the input string.
+-------------------------------------------
+Solution alternatives:-
+
+Enqueue every character of the string in queue and then check if character is nt equal to '*' then dequeue and save in new string and print.

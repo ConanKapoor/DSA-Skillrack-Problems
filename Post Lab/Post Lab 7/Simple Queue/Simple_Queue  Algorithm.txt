@@ -1,0 +1,18 @@
+ALGORITHM:-
+STEP1 - Define MAX as 50.
+STEP2 - Initialize queue[MAX] as char and rear=front=-1 as int. (Global variables).
+STEP3 - Initialize Enqueue and Dequeue functions.
+STEP4 - In main function, Initialize i and length=0 as int and string[100] and string_new[100] as char.
+STEP5 - Read string.
+STEP6 - Iterate through i=0 to strlen(string) and check if string[i]>='A' && string[i]<='Z' then Enqueue(string[i]) Otherwise do string_new[length]=Dequeue(); and length++;
+STEP7 - Add '\0' at last of string. (string_new[length]='\0';)
+STEP8 - Print string_new.
+STEP9 - In Enqueue function, do enqueue operations - 
+        	if (front==-1)
+        	{
+            		front = 0;
+        	}
+        	rear = rear + 1;
+        	queue[rear]=alpha;
+STEP10 - In Dequeue function, do dequeue operations -
+        	return queue[front++];
